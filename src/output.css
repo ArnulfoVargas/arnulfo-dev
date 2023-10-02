@@ -578,6 +578,10 @@ video {
   height: 5rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -687,6 +691,11 @@ video {
   background-color: rgb(234 54 54 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .fill-gray-200 {
   fill: #e5e7eb;
 }
@@ -752,6 +761,11 @@ video {
 .text-light-red {
   --tw-text-opacity: 1;
   color: rgb(234 54 54 / var(--tw-text-opacity));
+}
+
+.text-red-900 {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
 }
 
 .transition-all {
