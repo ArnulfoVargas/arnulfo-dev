@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom'
 
+
 const NavBar = () => {
+
+
   return (
-    <div className="h-20 bg-gray-800 flex flex-row px-5 justify-between items-center sticky top-0">
+      <div className="h-20 bg-gray-800 flex flex-row px-5 justify-between items-center z-50">
       <div className="flex flex-row h-full items-center justify-center w-16">
           <Link to={"/home"}>
             <img src="/LogoTransparenteBlanco.png" alt="Arnulfo Logo" className='h-14'/>
@@ -47,7 +50,7 @@ const NavBar = () => {
           </Link>
       </div>
 
-    </div>
+      </div>
   )
 }
 

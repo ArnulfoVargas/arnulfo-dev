@@ -12,6 +12,7 @@ const AppRouter = () => {
     <>
     <NavBar/>
 
+    <div className="p-5">
     <Routes>
         <Route path="/" Component={HomePage}/>
         <Route path="/home" Component={HomePage}/>
@@ -19,6 +20,7 @@ const AppRouter = () => {
         <Route path="/pokeapi" Component={PokeApi}/>
         <Route path="/contact" Component={ContactPage}/>
     </Routes>
+    </div>
 
     <Footer/>
     </>
