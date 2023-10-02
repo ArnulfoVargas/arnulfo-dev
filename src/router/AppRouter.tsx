@@ -12,7 +12,7 @@ const AppRouter = () => {
     <>
     <NavBar/>
 
-    <div className="p-5">
+    <div className="p-5 bg-light-gray">
     <Routes>
         <Route path="/" Component={HomePage}/>
         <Route path="/home" Component={HomePage}/>
