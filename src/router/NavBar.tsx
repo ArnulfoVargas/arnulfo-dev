@@ -17,7 +17,7 @@ const [showHamburguer, setShowHamburguer] = useState<boolean>(false)
 
       <div className='md:hidden xs:flex xs:h-full xs:w-full items-end justify-end'>
         <div className='h-20 w-10 fixed top-0 flex items-center' onClick={() => {setShowHamburguer(!showHamburguer)}}>
-          <svg viewBox="0 0 100 80" width="40" height="40" className='fill-gray-200'>
+          <svg viewBox="0 0 100 80" width="30" height="30" className='fill-gray-200'>
             <rect width="100" height="20" rx="3"></rect>
             <rect y="30" width="100" height="20" rx="3"></rect>
             <rect y="60" width="100" height="20" rx="3"></rect>
