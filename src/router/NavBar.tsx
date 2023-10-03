@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <>
     <nav className='flex items-center h-20 py-0 sticky top-0 justify-between bg-main-gray'>
-      <Link to={"/home"} className='h-full w-18 static flex items-center ml-16'>
+      <Link to={"/home"} className='h-full w-18 static md:flex hidden items-center ml-16'>
       <div className='h-full w-16 static flex items-center justify-center'>
           <div className='h-16 w-16 bg-red-600 rounded-full absolute flex items-center justify-center'>
             <img src="LogoTransparenteBlanco.png" alt="logo" className='h-14 z-10'/>
