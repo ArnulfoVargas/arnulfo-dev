@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap');
+
+#nav{
+    background-color: rgb(57, 52, 52);
+}
+
+#nav-name{
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.button{
+    background-color: rgb(57, 52, 52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    width: 8rem;
+    font-family:  'Fira Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+.button:hover{
+    background-color:rgb(185 28 28);
+}
