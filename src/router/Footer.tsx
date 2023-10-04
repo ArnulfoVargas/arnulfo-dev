@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="flex flex-col justify-center items-center md:items-start h-full w-full">
         <Link to={"/home"} className='md:h-40 h-22 md:w-40 w-22 static flex items-center ml-10'>
           <div className='md:h-40 h-22 md:w-40 my-8 md:my-0 w-22 static flex items-center justify-center'>
-            <div className='md:h-40 h-22 md:w-40 w-22 bg-red-600 rounded-full absolute flex items-center justify-center z-20'>
-              <img src="LogoTransparenteBlanco.png" alt="logo" className='md:h-36 h-20 z-20'/>
+            <div className='md:h-40 h-22 md:w-40 w-22 bg-red-600 rounded-full absolute flex items-center justify-center'>
+              <img src="LogoTransparenteBlanco.png" alt="logo" className='md:h-36 h-20'/>
             </div>
           </div>
         </Link>
