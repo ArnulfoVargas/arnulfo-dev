@@ -56,7 +56,7 @@ const NavBar = () => {
       </div>
       </Link>
 
-      <div className=' text-5xl mr-16 z-20 md:hidden h-14 w-14' onClick={ onClickEvent }>
+      <div className=' text-5xl mr-10 z-20 md:hidden h-12 w-12' onClick={ onClickEvent }>
         <img src={open ? "/close-sharp.svg" : "/menu-sharp.svg"} className='invert ' />
       </div>
 
