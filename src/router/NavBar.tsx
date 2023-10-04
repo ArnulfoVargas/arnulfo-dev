@@ -1,10 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import RoutingType from '../types/Types';
+import uniqid from "uniqid"
+
 const NavBar = () => {
 
   const [open, setOpen] = useState<boolean>(false)
   const body = document.querySelector("body");
+
+  const links : Array<RoutingType>= [ 
+    {name: "Home", route: "/home"},
+    {name: "About", route: "/about"},
+    {name: "PokeAPI", route: "/pokeapi"},
+    {name: "Contact", route: "/contact"},
+  ]
 
   window.addEventListener("resize", () => {
     if(window.screen.width >= 768){
@@ -47,39 +57,28 @@ const NavBar = () => {
       </Link>
 
       <div className=' text-5xl mr-16 z-20 md:hidden h-14 w-14' onClick={ onClickEvent }>
-        <img src={open ? "/close-sharp.svg" : "/menu-sharp.svg"} className='invert' />
+        <img src={open ? "/close-sharp.svg" : "/menu-sharp.svg"} className='invert ' />
       </div>
 
       <div className='h-20 md:flex hidden justify-end md:w-1/2'>
-        <Link to={"/home"} className='custom-btn'>
-          <p>Home</p>
-        </Link>
-        <Link to={"/home"} className='custom-btn'>
-          <p>About</p>
-        </Link>
-        <Link to={"/home"} className='custom-btn'>
-          <p>Extras <p className='text-sm inline'>▼</p></p>
-        </Link>
-        <Link to={"/home"} className='custom-btn'>
-          <p>Contact</p>
-        </Link>
+      {links.map(item => {
+          return (
+          <Link to={item.route} className='custom-btn' key={uniqid()}>
+            {item.name}
+          </Link>
+          )
+        })}
       </div>
 
       {/* Celulares */}
       <div className={`md:hidden bg-main-gray fixed h-full w-full bottom-0 z-10 flex flex-col items-start justify-center duration-500 ${open ? "left-0" : 'left-[-100%]'}`}>
-
-      <Link to={"/home"} className='custom-btn'>
-          <p>Home</p>
-        </Link>
-        <Link to={"/home"} className='custom-btn'>
-          <p>About</p>
-        </Link>
-        <Link to={"/home"} className='custom-btn'>
-          <p>Extras <p className='text-sm inline'>▼</p></p>
-        </Link>
-        <Link to={"/home"} className='custom-btn'>
-          <p>Contact</p>
-        </Link>
+      {links.map(item => {
+          return (
+          <Link to={item.route} className='custom-btn' key={uniqid()}>
+            {item.name}
+          </Link>
+          )
+        })}
       </div>
 
     </nav>
