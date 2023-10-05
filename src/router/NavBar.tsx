@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import RoutingType from '../data/Types';
+import {RoutingType} from '../data/Types';
 import uniqid from "uniqid"
 
 const NavBar = () => {
