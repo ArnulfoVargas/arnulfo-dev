@@ -1,16 +1,17 @@
-import { Page } from "../data/Types";
+import { Game } from "../data/Types";
+import CustomCarousel from "./CustomCarousel"
 import "./Preview.css"
 
 
 interface Props {
-    Page : Page
+    Game : Game
     index : number
 }
 
-const PagePreview = (props:Props) => {
+const GamePreview = (props:Props) => {
 
-    const {index, Page} = props;
-    const {content, url, name} = Page;
+    const {index, Game} = props;
+    const {images, content, url, name} = Game;
 
   return (
     <>
@@ -22,14 +23,14 @@ const PagePreview = (props:Props) => {
                 <a href={url} className="mt-2">
                     <div className="w-28 h-12 bg-main-red text-white flex items-center justify-center font-titles text-2xl font-bold animated-btn">
                         <p>
-                            Visit
+                            Play
                         </p>
                     </div>
                 </a>
             </div>
 
-            <div className="lg:w-1/2 h-96 w-full flex justify-center items-center">
-                <iframe src={url} className="w-10/12 h-full aspect-video border-main-red border-2"></iframe>
+            <div className="lg:w-1/2 w-full flex justify-center items-center">
+                <CustomCarousel images={images}/>
             </div>
 
         </div>
@@ -38,4 +39,4 @@ const PagePreview = (props:Props) => {
   )
 }
 
-export default PagePreview
+export default GamePreview

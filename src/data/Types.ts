@@ -9,3 +9,8 @@ export type Game = {
     url: string,
     images: Array<string>,
 }
+export type Page = {
+    name: string,
+    content: string,
+    url: string,
+}

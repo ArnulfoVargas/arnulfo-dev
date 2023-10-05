@@ -1,6 +1,6 @@
-import { Game } from "./Types";
+import { Game, Page } from "./Types";
 
-const GamesData : Array<Game>= [
+export const GamesData : Array<Game>= [
     {
         name: "Rect Rush",
         content: "Rect Rush is an infinite runner style game where you will have to keep yourself in constant movement, you will have at your disposal up to 4 different types of weapons that you will be able to use to avoid obstacles.",
@@ -21,4 +21,15 @@ const GamesData : Array<Game>= [
     }
 ]
 
-export default GamesData;
+export const Pages : Array<Page> = [
+    {
+        name: "Learning React Routes",
+        content: "Website created at the university exploring routing with React Router Dom.",
+        url: "https://react-router-clase.netlify.app/"
+    },
+    {
+        name: "Learning VueJS",
+        content: "Website created for didactic use to introduce me to the VueJS framework.",
+        url: "https://guitar-vue-app.netlify.app/"
+    }
+]
