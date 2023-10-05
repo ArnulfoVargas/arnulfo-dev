@@ -10,4 +10,7 @@
     .footer-txt{
         @apply text-secondary-gray font-mono-text text-lg
     }
+    .toony-borders{
+        @apply shadow-squared-shadow border-2 border-main-gray
+    }
 }

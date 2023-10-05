@@ -16,7 +16,7 @@ const PagePreview = (props:Props) => {
     <>
         <div className={`w-full flex m-5 lg:gap-0 gap-5 ${index % 2 == 0 ? "lg:flex-row flex-col" :  "lg:flex-row-reverse flex-col"} items-center justify-center`}>
             <div className="lg:w-1/2 w-full flex flex-col items-center justify-center">
-                <h1 className="text-white text-4xl font-titles bg-main-red">{name}</h1>
+                <h1 className="text-white text-3xl md:text-4xl text-center font-titles bg-main-red toony-borders">{name}</h1>
                 <p className="text-main-gray text-xl font-mono-text text-center my-5">{content}</p>
 
                 <a href={url} className="mt-2">
@@ -29,7 +29,7 @@ const PagePreview = (props:Props) => {
             </div>
 
             <div className="lg:w-1/2 h-96 w-full flex justify-center items-center">
-                <iframe src={url} className="w-10/12 h-full aspect-video border-main-red border-2"></iframe>
+                <iframe src={url} className="w-10/12 h-full aspect-video border-main-gray border-2 squared-shadow"></iframe>
             </div>
 
         </div>

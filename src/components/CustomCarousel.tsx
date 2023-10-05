@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import "./Preview.css"
 
 interface Props {
     images: Array<string>;
@@ -27,7 +28,7 @@ const CustomCarousel = (props: Props) => {
   }
   //'h-48 w-96'
   return (
-      <div className=' lg:w-3/4 h-fit w-full'> 
+      <div className=' lg:w-3/4 h-fit w-full squared-shadow border-2 border-main-gray'> 
         <div className='relative h-fit'>
           <div className='absolute top-1/2 -translate-y-1/2 left-8 text-3xl text-white z-10 cursor-pointer select-none' onClick={() => {scrollToImage('prev')}}>&#10092;</div>
           <div className='absolute top-1/2 -translate-y-1/2 right-8 text-3xl text-white z-10 cursor-pointer select-none' onClick={() => {scrollToImage('next')}}>&#10093;</div>

@@ -12,6 +12,9 @@ export default {
       fontFamily:{
         'titles' : "'Geologica', sans-serif",
         'mono-text' : "'Fragment Mono', monospace",
+      },
+      boxShadow:{
+        "squared-shadow" : "4px 4px rgb(57, 52, 52)"
       }
     },
   },
