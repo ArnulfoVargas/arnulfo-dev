@@ -14,3 +14,7 @@ export type Page = {
     content: string,
     url: string,
 }
+export type Tecnology = {
+    name: string,
+    image: string,
+}

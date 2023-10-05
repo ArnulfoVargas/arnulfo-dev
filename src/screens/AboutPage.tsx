@@ -1,5 +1,6 @@
 import GamePreview from "../components/GamePreview"
 import PagePreview from "../components/PagePreview"
+import RichTitle from "../components/RichTitle"
 import {GamesData, Pages } from "../data/DataBase"
 import uniqid from "uniqid"
 
@@ -7,9 +8,7 @@ const AboutPage = () => {
 
   return (
     <div className="flex items-center flex-col">
-      <div className="h-fit w-fit">
-          <h1 className="text-center text-5xl md:text-7xl font-titles bg-main-red text-white font-bold toony-borders">My Games</h1>
-      </div>
+      <RichTitle text="My Games"/>
 
       <div className="w-full h-full flex flex-col gap-5 p-10 items-center justify-center">
         {
@@ -19,9 +18,7 @@ const AboutPage = () => {
         }
       </div>
 
-      <div className="h-fit w-fit">
-          <h1 className="text-center text-5xl md:text-7xl font-titles bg-main-red text-white font-bold toony-borders">My Pages</h1>
-      </div>
+      <RichTitle text="My Pages"/>
 
       <div className="w-full h-full flex flex-col gap-5 p-10 items-center justify-center">
         {

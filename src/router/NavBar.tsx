@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import {RoutingType} from '../data/Types';
 import uniqid from "uniqid"
+import "./NavBar.css"
 
 const NavBar = () => {
 
@@ -63,7 +64,7 @@ const NavBar = () => {
       <div className='h-20 md:flex hidden justify-end md:w-1/2'>
       {links.map(item => {
           return (
-          <Link to={item.route} className='custom-btn' key={uniqid()}>
+          <Link to={item.route} className='custom-btn button' key={uniqid()}>
             {item.name}
           </Link>
           )
@@ -74,7 +75,7 @@ const NavBar = () => {
       <div className={`md:hidden bg-main-gray fixed h-full w-full bottom-0 z-10 flex flex-col items-start justify-center duration-500 ${open ? "left-0" : 'left-[-100%]'}`}>
       {links.map(item => {
           return (
-          <Link to={item.route} className='custom-btn' key={uniqid()} onClick={onClickEvent}>
+          <Link to={item.route} className='custom-btn button' key={uniqid()} onClick={onClickEvent}>
             {item.name}
           </Link>
           )

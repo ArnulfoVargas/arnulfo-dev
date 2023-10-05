@@ -2,143 +2,21 @@
     --red-color : rgb(185 28 28);
 }
 
-.text{
-    color: white;
-    background-color: var(--red-color);
-}
-.animated::after{
-    animation: textAnimation 10s linear infinite;
-    content: "";
+.changer{
+    animation: styleChanger 4s linear infinite;
 }
 
-@keyframes textAnimation{
+@keyframes styleChanger {
     0%{
-        content: "p";
+        text-shadow: 0 0 rgb(57, 52, 52);
     }
-    1%{
-        content: "pr";
-    }
-    2%{
-        content: "pro";
-    }
-    3%{
-        content: "prog";
-    }
-    4%{
-        content: "progr";
-    }
-    5%{
-        content: "progra";
-    }
-    6%{
-        content: "program";
-    }
-    7%{
-        content: "programm";
-    }
-    8%{
-        content: "programme";
-    }
-    9%{
-        content: "programmer";
-    }
-    23%{
-        content: "programmer";
-    }
-    24%{
-        content: "programme";
-    }
-    25%{
-        content: "programm";
-    }
-    26%{
-        content: "program";
-    }
-    27%{
-        content: "progra";
-    }
-    28%{
-        content: "progr";
-    }
-    29%{
-        content: "prog";
-    }
-    30%{
-        content: "pro";
-    }
-    31%{
-        content: "pr";
-    }
-    32%{
-        content: "p";
-    }
-    33%{
-        content: "";
-    }
-    57%{
-        content: "";
-    }
-    58%{
-        content: "s";
-    }
-    59%{
-        content: "st";
-    }
-    60%{
-        content: "stu";
-    }
-    61%{
-        content: "stud";
-    }
-    62%{
-        content: "stude";
-    }
-    63%{
-        content: "studen";
-    }
-    64%{
-        content: "student";
-    }
-    78%{
-        content: "student";
-    }
-    79%{
-        content: "studen";
-    }
-    80%{
-        content: "stude";
-    }
-    81%{
-        content: "stud";
-    }
-    82%{
-        content: "stu";
-    }
-    83%{
-        content: "st";
-    }
-    84%{
-        content: "s";
+    15%{
+        text-shadow: 5px -5px rgb(57, 52, 52);
     }
     85%{
-        content: "";
+        text-shadow: 5px -5px rgb(57, 52, 52);
     }
-    87%{
-        content: "";
-    }
-    88%{
-        content: ":";
-    }
-    89%{
-        content: ":D";
-    }
-    92%{
-        content: ":D";
-    }
-    93%{
-        content: ":";
-    }
-    94%{
-        content: "";
+    100%{
+        text-shadow: 0 0 rgb(57, 52, 52);
     }
 }

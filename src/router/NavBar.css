@@ -1,0 +1,12 @@
+
+.button:hover{
+    background-color: rgb(57, 52, 52);
+    text-shadow: 0 0 rgb(57, 52, 52);
+    transition: all .5s linear;
+}
+
+.button:hover{
+    background-color: rgb(185 28 28);
+    text-shadow: 3px -3px rgb(57, 52, 52);
+    transition: all .5s linear;
+}
