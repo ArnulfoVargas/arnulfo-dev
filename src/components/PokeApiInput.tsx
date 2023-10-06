@@ -47,7 +47,7 @@ const PokeApiInput = (props: Props) => {
       }
 
       setFunction(baseEndPoint + finalValue)
-      input!.value = "";
+      inputRef.current.value = '';
     }
 
     const clickEvent = () => {
