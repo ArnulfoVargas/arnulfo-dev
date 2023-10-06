@@ -11,7 +11,7 @@ const PokeApi = () => {
   const baseEndPoint = 'https://pokeapi.co/api/v2/pokemon/'
   const [endPoint, setEndPoint] = useState(baseEndPoint + Math.floor(Math.random() * 1017 + 1));
   const [loading, setLoading] = useState(true)
-  const [pokemon, setPokemon] = useState({})
+  const [pokemon, setPokemon] = useState({} as PokemonType)
 
   
   const fetchData = async() => {
@@ -64,7 +64,7 @@ const PokeApi = () => {
 
         <div className="flex md:flex-row flex-col w-full md:w-3/4 justify-center items-center my-5 gap-5 md:gap-5">
           <PokeApiInput type="text" placeHolder={pokemon.name} id={uniqid()} setFunction={setEndPoint}/>
-          <PokeApiInput type="number" placeHolder={pokemon.id} id={uniqid()} setFunction={setEndPoint}/>
+          <PokeApiInput type="number" placeHolder={pokemon.id.toString()} id={uniqid()} setFunction={setEndPoint}/>
         </div>
 
         <div className="md:w-1/2 w-full">
