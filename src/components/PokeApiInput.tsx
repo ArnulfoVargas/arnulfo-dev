@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 interface Props {
     type : string,
     id: string,
@@ -8,10 +10,11 @@ interface Props {
 const PokeApiInput = (props: Props) => {
     const baseEndPoint = 'https://pokeapi.co/api/v2/pokemon/'
     const {type, setFunction, placeHolder, id} = props;
+    const inputRef = useRef('1')
 
     const onGetText = () => {
-      const input = document.getElementById(id);
-      const data = input?.value;
+      const data = inputRef.current.value;
+      console.log(data)
       const dataSplit = data.split(" ")
       let finalData : string = "";
     
@@ -20,14 +23,13 @@ const PokeApiInput = (props: Props) => {
       }
 
       if(finalData.length > 0){
-        input!.value = "";
+        inputRef.current;
         setFunction(baseEndPoint + finalData.toLowerCase());
       }
     }
 
     const onGetNumber = () => {
-      const input = document.getElementById(id);
-      const data = input?.value;
+      const data = inputRef.current.value;
       let finalValue = '';
 
       if(data === "") return 
@@ -60,7 +62,7 @@ const PokeApiInput = (props: Props) => {
 
   return (
     <div className="h-12 md:w-96 w-10/12 md:p-0 bg-red-100 grid-cols-3 grid toony-borders">
-        <input type={type} className="col-span-2 rounded-none px-2 text-lg lg:text-2xl font-titles" id={ id } placeholder={placeHolder}/>
+        <input type={type} ref={inputRef} className="col-span-2 rounded-none px-2 text-lg lg:text-2xl font-titles" id={ id } placeholder={placeHolder}/>
         <div className="w-full h-full bg-main-red flex items-center justify-center hover:bg-red-600 transition-colors duration-500" onClick={clickEvent}><p className="text-xl md:text-lg lg:text-2xl font-titles text-white">Search</p></div>
     </div>
   )
