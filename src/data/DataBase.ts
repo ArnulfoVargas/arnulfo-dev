@@ -57,7 +57,7 @@ export const Languages : Array<Tecnology> = [
     },
     {
         name: "C++",
-        image: "CPP.png"
+        image: "/public/Languages/CPP.png"
     },
     {
         name: "Java",

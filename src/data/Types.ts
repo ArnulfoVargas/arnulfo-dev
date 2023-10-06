@@ -2,7 +2,6 @@ export type RoutingType = {
     name : string,
     route : string,
 }
-
 export type Game = {
     name: string,
     content: string,
@@ -17,4 +16,13 @@ export type Page = {
 export type Tecnology = {
     name: string,
     image: string,
+}
+
+export type PokemonType = {
+    name     : string,
+    sprite   : string,
+    abilities: [object],
+    types    : [object],
+    id       : number,
+    shiny    : string,
 }

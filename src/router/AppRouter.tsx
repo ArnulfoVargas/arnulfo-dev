@@ -14,11 +14,11 @@ const AppRouter = () => {
 
     <div className="p-5 bg-light-gray">
     <Routes>
-        <Route path="/" Component={HomePage}/>
-        <Route path="/home" Component={HomePage}/>
-        <Route path="/about" Component={AboutPage}/>
-        <Route path="/pokeapi" Component={PokeApi}/>
-        <Route path="/contact" Component={ContactPage}/>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/home" element={<HomePage/>}/>
+        <Route path="/about" element={<AboutPage/>}/>
+        <Route path="/pokeapi" element={<PokeApi/>}/>
+        <Route path="/contact" element={<ContactPage/>}/>
     </Routes>
     </div>
 

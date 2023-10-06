@@ -14,3 +14,15 @@
         @apply shadow-squared-shadow border-2 border-main-gray
     }
 }
+
+@layer base {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    
+    body{
+        user-select: none;
+    }
+}
