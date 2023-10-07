@@ -7,6 +7,7 @@ interface Props {
 
 const Pokemon = (props: Props) => {
     const showShiny :boolean = localStorage.getItem("shiny") === 's'
+    
     const pokemon = props.pokemon
     const [shiny, setShiny] = useState( () => { if (showShiny != null) return showShiny; else return false;})
 
