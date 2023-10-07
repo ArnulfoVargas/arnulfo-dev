@@ -37,31 +37,31 @@ export const Pages : Array<Page> = [
 export const Languages : Array<Tecnology> = [
     {
         name: "C#",
-        image: "https://www.macformazione.com/wp-content/uploads/2022/04/Corso-Programmazione-C-Sharp.webp"
+        image: "/Languages/csharp.png"
     },
     {
         name: "Python",
-        image: "https://ww2.freelogovectors.net/wp-content/uploads/2023/09/python_logo-freelogovectors.net_.png"
+        image: "/Languages/python.png"
     },
     {
         name: "Dart",
-        image: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/dart%20logo.png"
+        image: "/Languages/dart.png"
     },
     {
         name: "Java Script",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
+        image: "/Languages/js.png"
     },
     {
         name: "Type Script",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
+        image: "/Languages/ts.png"
     },
     {
         name: "C++",
-        image: "/Languages/CPP.png"
+        image: "/Languages/cpp.png"
     },
     {
         name: "Java",
-        image: "https://www.svgrepo.com//show/184143/java.svg"
+        image: "/Languages/java.png"
     },
 ]
 
