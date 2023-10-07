@@ -68,34 +68,34 @@ export const Languages : Array<Tecnology> = [
 export const Tecnologies : Array<Tecnology> = [
     {
         name: "Unity",
-        image: "https://assets.stickpng.com/images/62e131df7fe3599fdd46ecb3.png"
+        image: "/Tech/unity.png"
     },
     {
         name: "Unreal Engine",
-        image: "https://academyclass.com/wp-content/uploads/2021/10/ACCL-Unreal-Engine-1200x1200.png"
+        image: "/Tech/unreal.png"
     },
     {
         name: "Flutter",
-        image: "https://web-strapi.mrmilu.com/uploads/flutter_logo_470e9f7491.png"
+        image: "/Tech/flutter.png"
     },
     {
         name: "React",
-        image: "https://cdn.iconscout.com/icon/free/png-256/free-react-3-1175109.png?f=webp"
+        image: "/Tech/react.png"
     },
     {
         name: "Firebase",
-        image: "https://cdn.icon-icons.com/icons2/2699/PNG/512/firebase_logo_icon_171157.png"
+        image: "/Tech/firebase.png"
     },
     {
         name: "Godot",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Godot_icon.svg/2048px-Godot_icon.svg.png"
+        image: "/Tech/godot.png"
     },
     {
         name: "Docker",
-        image: "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png"
+        image: "/Tech/docker.png"
     },
     {
         name: "VueJS",
-        image: "https://vuejs.org/images/logo.png"
+        image: "/Tech/vue.png"
     },
 ]
