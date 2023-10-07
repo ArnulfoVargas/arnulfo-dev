@@ -12,7 +12,6 @@ const PokeApi = () => {
   const [endPoint, setEndPoint] = useState(baseEndPoint + Math.floor(Math.random() * 1017 + 1));
   const [loading, setLoading] = useState(true)
   const [pokemon, setPokemon] = useState({} as PokemonType)
-
   
   const fetchData = async() => {
     setLoading(true)
