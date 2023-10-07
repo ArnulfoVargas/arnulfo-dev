@@ -9,10 +9,10 @@ import {Route, Routes} from 'react-router-dom'
 
 const AppRouter = () => {
   return (
-    <>
+    <div className="flex flex-col">
     <NavBar/>
 
-    <div className="p-5 bg-light-gray">
+    <div className="p-5 bg-light-gray min-h-screen">
     <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/home" element={<HomePage/>}/>
@@ -23,7 +23,7 @@ const AppRouter = () => {
     </div>
 
     <Footer/>
-    </>
+    </div>
   )
 }
 

@@ -15,8 +15,9 @@ export default {
       },
       boxShadow:{
         "squared-shadow" : "4px 4px rgb(57, 52, 52)"
-      }
+      },
     },
+    
   },
   plugins: [],
 }
